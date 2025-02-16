@@ -10,7 +10,17 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
-    "prettier": "prettier src --write"
+    "prettier": "prettier src --write",
+    "destroy": "cdk destroy --force",
+    "deploy": "cdk deploy --require-approval never",
+    "cleanup": "bash cleanup.sh",
+    "bootstrap": "cdk bootstrap aws://438465144658/eu-west-1",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "list": "cdk list",
+    "doctor": "cdk doctor",
+    "clean": "rm -rf cdk.out/",
+    "quick-deploy": "npm run clean && npm run deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
