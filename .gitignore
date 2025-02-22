@@ -24,3 +24,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# cdk files
+.venv
+cdk.out
+__pycache__
+*.swp
+.env
